@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Toolkit UI</title>
+    <link rel="stylesheet" href="style.css" /> <!-- Include external CSS file -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-left">
+          <button id="burger-button">≡</button> <!-- Hamburger button -->
+          <span>Logo</span>
+        </div>
+        <div class="header-center">
+          <div class="search-container">
+            <span class="search-icon">🔍</span> <!-- Search icon -->
+            <input type="text" id="search-box" placeholder="Search..." /> <!-- Search input box -->
+          </div>
+        </div>
+        <div class="header-right">
+          <img src="avatar.png" alt="Avatar" id="avatar-icon" /> <!-- Avatar image -->
+        </div>
+      </div>
+      <div id="navigation-tab">
+        <div class="nav-item">
+          <h3>Recent Projects</h3>
+          <div class="sub-menu" id="recent-projects"></div> <!-- Sub-menu for recent projects -->
+        </div>
+        <div class="nav-item">
+          <h3>Recent Tools</h3>
+          <div class="sub-menu" id="recent-tools"></div> <!-- Sub-menu for recent tools -->
+        </div>
+        <div class="nav-item">
+          <h3>Recent Toolkits</h3>
+          <div class="sub-menu" id="recent-toolkits"></div> <!-- Sub-menu for recent toolkits -->
+        </div>
+        <div class="nav-item">
+          <h3>Community</h3>
+          <div class="sub-menu" id="community">
+            <div>
+              <a href="https://forum.crosscompute.com/" target="_blank">Forum</a> <!-- Link to forum -->
+            </div>
+            <div>
+              <a href="https://www.youtube.com/c/CrossCompute" target="_blank">YouTube</a> <!-- Link to YouTube channel -->
+            </div>
+            <div>
+              <a href="https://github.com/crosscompute" target="_blank">GitHub</a> <!-- Link to GitHub repository -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Featured Tools</h2>
+        <div class="featured-section"></div> <!-- Section for featured tools -->
+        <h2>Featured Toolkits</h2>
+        <div class="toolkits-section"></div> <!-- Section for featured toolkits -->
+        <h2>Browse</h2>
+        <div class="browse-section">
+          <div class="browse-header">
+            <select id="view-filter" class="filter">
+              <option value="date">Recent</option>
+              <option value="popular">Popular</option>
+            </select> <!-- Dropdown for view filter -->
+            <select id="toolkit-filter" class="filter">
+              <option value="all">All Toolkits</option>
+              <!-- Options will be dynamically populated -->
+            </select> <!-- Dropdown for toolkit filter -->
+          </div>
+          <div id="browse-list"></div> <!-- List of items to browse, rendered dynamically -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

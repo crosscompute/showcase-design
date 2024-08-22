@@ -1,0 +1,297 @@
+/* Reset styles for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Container styles */
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    margin: 0 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    box-sizing: border-box;
+    gap: 5%;
+}
+
+/* Styles for the left and right sections of the header */
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Styles for the center section of the header */
+.header-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles for the search container */
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Styles for the search icon */
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Styles for the search box */
+#search-box {
+    width: 70%;
+    padding: 8px 15px 8px 35px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Styles for the avatar icon */
+#avatar-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Styles for the navigation tab */
+#navigation-tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Styles for navigation items */
+.nav-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+/* Styles for navigation buttons */
+.nav-btn {
+    width: 100%;
+    display: flex;
+}
+
+/* Styles for sub-menu */
+.sub-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the content section */
+.content {
+    flex-grow: 1;
+    margin-top: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the featured section */
+.featured-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    overflow-x: auto;
+}
+
+/* Styles for the toolkits section */
+.toolkits-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    overflow-x: auto;
+}
+
+/* Styles for featured tools */
+.featured-tool {
+    flex: 0 0 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Styles for the information of featured tools */
+.featured-tool-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* Styles for the heading of featured tools */
+.featured-tool-info h3 {
+    margin: 5px 0;
+}
+
+/* Styles for the paragraph of featured tools */
+.featured-tool-info p {
+    margin: 5px 0;
+}
+
+/* Styles for the demo section */
+.demo {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+/* Styles for the buttons in the featured tools section */
+.featured-tool-btns {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for individual buttons in the featured tools section */
+.featured-tool-btn {
+    display: flex;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Styles for the browse header */
+.browse-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Styles for the filter */
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/* Styles for browse items */
+.browse-item {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for the information of browse items */
+.browse-item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Styles for the heading of browse items */
+.browse-item-info h4 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Styles for the sub-heading of browse items */
+.browse-item-info h3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Styles for the paragraph of browse items */
+.browse-item-info p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Styles for the meta information of browse items */
+.browse-item-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styles for the meta information paragraph of browse items */
+.browse-item-meta p {
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-size: smaller;
+}
