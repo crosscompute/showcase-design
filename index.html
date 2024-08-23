@@ -4,71 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Toolkit UI</title>
-    <link rel="stylesheet" href="style.css" /> <!-- Include external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Include external CSS file -->
   </head>
   <body>
     <div class="container">
       <div class="header">
         <div class="header-left">
-          <button id="burger-button">≡</button> <!-- Hamburger button -->
+          <svg
+            id="burger-button"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z"
+              fill="currentColor"
+            />
+          </svg>
+          <!-- Hamburger button -->
           <span>Logo</span>
         </div>
-        <div class="header-center">
-          <div class="search-container">
-            <span class="search-icon">🔍</span> <!-- Search icon -->
-            <input type="text" id="search-box" placeholder="Search..." /> <!-- Search input box -->
-          </div>
-        </div>
         <div class="header-right">
-          <img src="avatar.png" alt="Avatar" id="avatar-icon" /> <!-- Avatar image -->
+          <svg
+            id="search-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 2C6.03 2 2 6.03 2 11C2 15.97 6.03 20 11 20C12.85 20 14.55 19.4 15.91 18.36L20.29 22.73L21.71 21.31L17.34 16.94C18.4 15.58 19 13.88 19 12C19 6.03 14.97 2 11 2ZM11 4C14.87 4 18 7.13 18 11C18 14.87 14.87 18 11 18C7.13 18 4 14.87 4 11C4 7.13 7.13 4 11 4Z"
+              fill="currentColor"
+            />
+          </svg>
+          <!-- Search icon -->
+          <svg
+            id="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              fill="#000000"
+              d="M628.736 528.896A416 416 0 0 1 928 928H96a415.872 415.872 0 0 1 299.264-399.104L512 704l116.736-175.104zM720 304a208 208 0 1 1-416 0 208 208 0 0 1 416 0z"
+            />
+          </svg>
+          <!-- Avatar icon -->
         </div>
       </div>
       <div id="navigation-tab">
         <div class="nav-item">
           <h3>Recent Projects</h3>
-          <div class="sub-menu" id="recent-projects"></div> <!-- Sub-menu for recent projects -->
+          <div class="sub-menu" id="recent-projects"></div>
+          <!-- Sub-menu for recent projects -->
         </div>
         <div class="nav-item">
           <h3>Recent Tools</h3>
-          <div class="sub-menu" id="recent-tools"></div> <!-- Sub-menu for recent tools -->
+          <div class="sub-menu" id="recent-tools"></div>
+          <!-- Sub-menu for recent tools -->
         </div>
         <div class="nav-item">
           <h3>Recent Toolkits</h3>
-          <div class="sub-menu" id="recent-toolkits"></div> <!-- Sub-menu for recent toolkits -->
+          <div class="sub-menu" id="recent-toolkits"></div>
+          <!-- Sub-menu for recent toolkits -->
         </div>
         <div class="nav-item">
           <h3>Community</h3>
           <div class="sub-menu" id="community">
             <div>
-              <a href="https://forum.crosscompute.com/" target="_blank">Forum</a> <!-- Link to forum -->
+              <a href="https://forum.crosscompute.com/" target="_blank"
+                >Forum</a
+              >
+              <!-- Link to forum -->
             </div>
             <div>
-              <a href="https://www.youtube.com/c/CrossCompute" target="_blank">YouTube</a> <!-- Link to YouTube channel -->
+              <a href="https://www.youtube.com/c/CrossCompute" target="_blank"
+                >YouTube</a
+              >
+              <!-- Link to YouTube channel -->
             </div>
             <div>
-              <a href="https://github.com/crosscompute" target="_blank">GitHub</a> <!-- Link to GitHub repository -->
+              <a href="https://github.com/crosscompute" target="_blank"
+                >GitHub</a
+              >
+              <!-- Link to GitHub repository -->
             </div>
           </div>
         </div>
       </div>
+
+      <div id="search-tab">
+        <div class="search-tab-header">
+          <div class="search-container">
+            <svg
+              id="search-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 2C6.03 2 2 6.03 2 11C2 15.97 6.03 20 11 20C12.85 20 14.55 19.4 15.91 18.36L20.29 22.73L21.71 21.31L17.34 16.94C18.4 15.58 19 13.88 19 12C19 6.03 14.97 2 11 2ZM11 4C14.87 4 18 7.13 18 11C18 14.87 14.87 18 11 18C7.13 18 4 14.87 4 11C4 7.13 7.13 4 11 4Z"
+                fill="currentColor"
+              />
+            </svg>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search for tools and toolkits"
+            />
+          </div>
+          <button id="cancel-button">Cancel</button>
+        </div>
+        <div id="search-results"></div>
+        <!-- Search results will be rendered here -->
+      </div>
+
       <div class="content">
         <h2>Featured Tools</h2>
-        <div class="featured-section"></div> <!-- Section for featured tools -->
+        <div class="featured-section"></div>
+        <!-- Section for featured tools -->
         <h2>Featured Toolkits</h2>
-        <div class="toolkits-section"></div> <!-- Section for featured toolkits -->
+        <div class="toolkits-section"></div>
+        <!-- Section for featured toolkits -->
         <h2>Browse</h2>
         <div class="browse-section">
           <div class="browse-header">
             <select id="view-filter" class="filter">
               <option value="date">Recent</option>
               <option value="popular">Popular</option>
-            </select> <!-- Dropdown for view filter -->
+            </select>
+            <!-- Dropdown for view filter -->
             <select id="toolkit-filter" class="filter">
               <option value="all">All Toolkits</option>
               <!-- Options will be dynamically populated -->
-            </select> <!-- Dropdown for toolkit filter -->
+            </select>
+            <!-- Dropdown for toolkit filter -->
           </div>
-          <div id="browse-list"></div> <!-- List of items to browse, rendered dynamically -->
+          <div id="browse-list"></div>
+          <!-- List of items to browse, rendered dynamically -->
         </div>
       </div>
     </div>
